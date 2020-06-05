@@ -1,0 +1,102 @@
+﻿@model Empowerment.Web.Data.Entities.Cortesia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cortesia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDocumento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoDocumento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Documento)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Documento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Web)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Web)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Instagram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Instagram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Facebook)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Otro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Otro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cual)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cual)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInscripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaInscripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaseCortesia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClaseCortesia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

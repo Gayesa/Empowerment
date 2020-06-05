@@ -1,0 +1,36 @@
+﻿@model Empowerment.Web.Data.Entities.Asistencia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Asistencia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaEntrada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaEntrada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaSalida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaSalida)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

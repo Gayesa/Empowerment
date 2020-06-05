@@ -1,0 +1,130 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: 'Black Ops One';
+    src: url("../lib/bootstrap/dist/fonts/BlackOpsOne-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+/* Colores Pantallas */
+
+.tituloEmpowerment {
+    color: #000000;
+    font-family: "Black Ops One", cursive;
+    text-align: center;
+}
+
+.tituloContenedor {
+    color: #fff;
+    font-family: "Black Ops One", cursive;
+    text-align: center;
+}
+
+.navEmpowerment {
+    background: #000000;
+}
+
+/* Personalización Botones */
+
+.btn-negro {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-negro:hover {
+    color: #fff;
+    background-color: #2f2e2e;
+    border-color: #2f2e2e;
+}
+
+.btn-gris {
+    color: #fff;
+    background-color: #2f2e2e;
+    border-color: #2f2e2e;
+}
+
+.btn-gris:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-naranja {
+    color: #fff;
+    background-color: #FA775B;
+    border-color: #FA775B;
+}
+
+.btn-naranja:hover {
+    color: #fff;
+    background-color: #FC461F;
+    border-color: #FC461F;
+}
+
+.btn-toro {
+    color: #fff;
+    background-color: #6b292b;
+    border-color: #6b292b;
+}
+
+.btn-toro:hover {
+    color: #fff;
+    background-color: #6b0c0f;
+    border-color: #6b0c0f;
+}
+
+.panel-empowermentRojo > .panel-heading {
+    color: #fff;
+    background-color: #6b0c0f;
+    border-color: #6b0c0f;
+}
+
+.panel-empowermentNegro > .panel-heading {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.panel-empowermentGris > .panel-heading {
+    color: #fff;
+    background-color: #444543;
+    border-color: #444543;
+}
