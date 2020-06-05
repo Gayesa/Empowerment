@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Empowerment.Web.Data;
+using Empowerment.Web.Data.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Empowerment.Web.Data;
-using Empowerment.Web.Data.Entities;
 
 namespace Empowerment.Web.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ClientesController : Controller
     {
         private readonly DataContext _context;

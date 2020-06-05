@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Empowerment.Web.Data;
 using Empowerment.Web.Data.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Empowerment.Web.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ManagersController : Controller
     {
         private readonly DataContext _context;
