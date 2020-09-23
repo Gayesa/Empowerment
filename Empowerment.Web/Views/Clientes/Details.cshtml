@@ -3,16 +3,285 @@
 @{
     ViewData["Title"] = "Details";
 }
+<br />
+<br />
+<br />
 
-<h2>Details</h2>
+<div class="panel panel-empowermentNegro tituloTabla">
+    <div class="panel-heading">INFORMACIÓN PERSONAL DEL USUARIO</div>
+    <div class="panel-body bordeContenedor">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.FechaInscripcion)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.FechaInscripcion)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.TipoDocumento)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.TipoDocumento)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Documento)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Documento)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Edad)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Edad)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Nombre)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Nombre)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Apellido)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Apellido)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Direccion)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Direccion)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Email)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Email)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.FechaNacimiento)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.FechaNacimiento)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.LugarNacimiento)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.LugarNacimiento)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Genero)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Genero)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Peso)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Peso)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Estatura)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Estatura)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.GradoEscolaridad)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.GradoEscolaridad)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.InstitucionEducativa)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.InstitucionEducativa)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<div>
-    <h4>Cliente</h4>
-    <hr />
-    <dl class="dl-horizontal">
-    </dl>
+<div class="panel panel-empowermentNegro tituloTabla">
+    <div class="panel-heading">INFORMACIÓN FAMILIAR DEL USUARIO</div>
+    <div class="panel-body bordeContenedor">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.NombreAcudiente)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.NombreAcudiente)
+                </div>
+                <div class="col-md-2 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.OcupacionAcudiente)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.OcupacionAcudiente)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.TelefonoAcudiente)
+                </div>
+                <div class="col-md-1 encabezado_input">
+                    @Html.DisplayFor(model => model.User.TelefonoAcudiente)
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+<div class="panel panel-empowermentNegro tituloTabla">
+    <div class="panel-heading">ACTIVIDADES REALIZADAS HABITUALMENTE</div>
+    <div class="panel-body bordeContenedor">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Cultural)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Cultural)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Artistica)
+                </div>
+                <div class="col-md-3 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Artistica)
+                </div>
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Deportiva)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Deportiva)
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1 encabezado_label">
+                    @Html.DisplayNameFor(model => model.User.Recreativa)
+                </div>
+                <div class="col-md-2 encabezado_input">
+                    @Html.DisplayFor(model => model.User.Recreativa)
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<hr />
+<div>
+    <a asp-action="AddInscripcion" asp-route-id="@Model.Id" class="btn btn-rojo"><i class="glyphicon glyphicon-plus"></i> AGREGAR INSCRIPCIÓN</a>
+</div>
+
+@if (Model.Inscripciones.Count == 0)
+{
+    <h4>El usuario no tiene inscripciones</h4>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-empowermentNegro tituloTabla ">
+                <div class="panel-heading">HISTORIAL DE PLANES</div>
+                <div class="panel-body1 bordeContenedor">
+                    <table class="table table-hover table-responsive table-striped" id="MyTable">
+                        <thead class="celdaTabla">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Inscripciones.FirstOrDefault().Plan.Nombre)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Inscripciones.FirstOrDefault().Plan.Categoria)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Inscripciones.FirstOrDefault().Vigencia)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Inscripciones.FirstOrDefault().FechaInicio)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Inscripciones.FirstOrDefault().FechaFin)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Inscripciones)
+                            {
+                                <tr >
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Plan.Nombre)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Plan.Categoria)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Vigencia)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaInicio)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FechaFin)
+                                    </td>
+                                    <td>
+                                        <a asp-action="EditInscripcion" class="btn btn-default" asp-route-id="@item.Id"><i class="glyphicon glyphicon-pencil"></i> </a>
+                                        <a asp-action="Details" class="btn btn-default" asp-route-id="@item.Id"><i class="glyphicon glyphicon-list"> </i> </a>
+                                        <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog"><i class="glyphicon glyphicon-trash"></i></button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index" class="btn btn-success"><i class="glyphicon glyphicon-arrow-left"></i></a>
+    </div>
+
+}
+<!-- Tabla  -->
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#MyTable').DataTable();
+
+            // Delete item
+            var item_to_delete;
+
+            $('.deleteItem').click((e) => {
+                item_to_delete = e.currentTarget.dataset.id;
+            });
+
+            $("#btnYesDelete").click(function () {
+                window.location.href = '/Clientes/Details/' + item_to_delete;
+            });
+        });
+    </script>
+}

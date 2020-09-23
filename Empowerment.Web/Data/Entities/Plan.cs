@@ -10,7 +10,7 @@ namespace Empowerment.Web.Data.Entities
     {
         public int Id { get; set; }
 
-        [Display(Name = "Nombre del Plan")]
+        [Display(Name = "Plan")]
         [MaxLength(50, ErrorMessage = "El campo {0} no debe tener mas de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Nombre { get; set; }
@@ -29,7 +29,7 @@ namespace Empowerment.Web.Data.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Sesiones { get; set; }
 
-        [Display(Name = "Valor del Plan")]
+        [Display(Name = "Costo")]
         [MaxLength(12, ErrorMessage = "El campo {0} no debe tener mas de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Costo { get; set; }

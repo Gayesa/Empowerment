@@ -1,61 +1,26 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
-@font-face {
-    font-family: 'Black Ops One';
-    src: url("../lib/bootstrap/dist/fonts/BlackOpsOne-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
 
 /* Colores Pantallas */
 
 .tituloEmpowerment {
     color: #000000;
-    font-family: "Black Ops One", cursive;
+    font-family: Arial, Helvetica, sans-serif, cursive;
     text-align: center;
 }
 
 .tituloContenedor {
     color: #fff;
-    font-family: "Black Ops One", cursive;
+    font-family: Arial, Helvetica, sans-serif, cursive;
     text-align: center;
 }
+
+.tituloTabla {
+    color: #444543;
+    font-family: Arial, Helvetica, sans-serif, cursive;
+    text-align: left;
+}
+
 
 .navEmpowerment {
     background: #000000;
@@ -123,8 +88,81 @@ body {
     border-color: #000000;
 }
 
+.panel-body1 {
+    color: #000000;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.panel-body {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
 .panel-empowermentGris > .panel-heading {
     color: #fff;
     background-color: #444543;
     border-color: #444543;
 }
+.bordeContenedor {
+    border: 1px solid #444543;
+    border-radius: 10px;
+}
+
+.panel-contenedorDetalle > .panel-heading {
+    background: #d4fcbd;
+    border: 1px solid #807d7d;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-contenedorDetalle2 > .panel-heading {
+    background: #afcde3;
+    border: 1px solid #807d7d;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.celdaTabla{
+    background: #f62f2f;
+    color: #fff;
+}
+
+/* Formulario para mostrar detalle */
+
+.encabezado_label {
+    background: #444543;
+    color: #fff;
+    border: 1px solid #807d7d;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.encabezado_label2 {
+    background: #afcde3;
+    border: 1px solid #807d7d;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.encabezado_input {
+    border: 1px solid #807d7d;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 1px;
+    margin: 1px;
+    height: 31px;
+}
+
+

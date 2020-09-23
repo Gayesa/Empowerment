@@ -21,8 +21,17 @@ namespace Empowerment.Web.Data
         {
             await _dataContext.Database.EnsureCreatedAsync();
             await CheckRoles();
-            var manager = await CheckUserAsync("80148070", "Gabriel", "Sánchez", "gayesa8@gmail.com", "320 222 7706", "Calle 23c No. 70-50", "Admin");
-            var customer = await CheckUserAsync("79566332", "Yesid", "Sarmiento", "yesi_941@hotmail.com", "350 634 2747", "Diagonal 26 calle 56-89", "Customer");
+            var fechaInscripcion = DateTime.Now;
+            var fechaNacimiento = DateTime.Now;
+
+            var manager = await CheckUserAsync(fechaInscripcion, "Cédula de Ciudadanía", "80148070", "Gabriel", "Sánchez", 
+                "gayesa8@gmail.com", "320 222 7706", "Calle 23c No. 70-50", fechaNacimiento , "Bogota", "30 años", "Masculino", "75 Kgs", 
+                "1.70 Mts", "Profesional", "Universidad Autonoma", "Danza, Teatro", "", "", "", "Myriam Sánchez", "Abogada", 
+                "3113584411", "Admin");
+            var customer = await CheckUserAsync(fechaInscripcion, "Cédula de Ciudadanía", "79566332", "Yesid", "Sarmiento", 
+                "yesi_941@hotmail.com", "350 634 2747", "Diagonal 26 calle 56-89", fechaNacimiento, "Cali", "24 años", "Masculino", 
+                "75 Kgs", "1.70 Mts", "Profesional", "Universidad del Valle", "Danza, Teatro", "Fútbol", "", "Video Juegos",
+                "Alberto Ramirez", "Ingeniero","3015789122", "Customer");
 
             await CheckPlanesAsync();
             await CheckAgendasAsync();
@@ -34,12 +43,30 @@ namespace Empowerment.Web.Data
         }
 
         private async Task<User> CheckUserAsync(
+            
+            DateTime fechaInscripcion,
+            string tipoDocumento,
             string documento, 
             string nombre, 
             string apellido, 
             string email, 
             string telefono, 
             string direccion, 
+            DateTime fechaNacimiento,
+            string lugarNacimiento,  
+            string edad, 
+            string genero, 
+            string peso, 
+            string estatura, 
+            string escolaridad, 
+            string institucion, 
+            string cultural, 
+            string deportiva, 
+            string artistica, 
+            string recreativa,
+            string nombreAcudiente,
+            string ocupacion,
+            string telefonoAcudiente,
             string rol)
         {
             var user = await _userHelper.GetUserByEmailAsync(email);
@@ -49,12 +76,29 @@ namespace Empowerment.Web.Data
 
                 user = new User
                 {
+                    FechaInscripcion = fechaInscripcion,
+                    TipoDocumento = tipoDocumento,
                     Nombre = nombre,
                     Apellido = apellido,
                     Email = email,
                     UserName = email,
                     PhoneNumber = telefono,
                     Direccion = direccion,
+                    FechaNacimiento = fechaNacimiento,
+                    LugarNacimiento = lugarNacimiento,
+                    Edad = edad,
+                    Genero = genero,
+                    Peso = peso,
+                    Estatura = estatura,
+                    GradoEscolaridad = escolaridad,
+                    InstitucionEducativa = institucion,
+                    Cultural = cultural,
+                    Deportiva = deportiva,
+                    Artistica = artistica,
+                    Recreativa = recreativa,
+                    NombreAcudiente = nombreAcudiente,
+                    OcupacionAcudiente = ocupacion,
+                    TelefonoAcudiente = telefonoAcudiente,
                     Documento = documento
                 };
 

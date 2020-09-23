@@ -3,10 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Empowerment.Web</title>
+    <meta name="description" content="Empowerment 'Set Point For Mind & Body' es una empresa dedicada al entendimiento y reconocimiento corporal, desde diferentes
+									  saberes y prácticas, técnicas somáticas, artes marciales, entrenamiento físico y otros que aporten al crecimiento y desarrollo
+									  personal a partir de la experiencia corporal." />
+    <meta name="keywords" content="Artes marciales, Hapkido, Sistema entrenamiento integral, Kick Boxing, Entrenamiento integrado, Hap ki do, Gym, gym, gimnasio,
+									kick boxing chia, gimnasio chia, gimnasio av pradilla, artes marciales chia, kickboxing chia, kickboxing, empowerment chia, empowerment,
+									empowerment set point for mind y body, empowerment set point for mind & body, empowerment set point, empowerment for mind y body,
+									entrenamiento artes mariales, entrenamiento kickboxing, entrenamiento chia," />
+    <meta name="author" content="Empowerment Set Point For Mind & Body" />
+    <title>Empowerment</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
 
     <environment include="Development">
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/icomoon.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/magnific-popup.css" />
+        <link rel="stylesheet" href="~/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="~/css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="~/css/style.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -26,11 +41,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Empowerment.Web</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     @*<li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>*@
                     @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
@@ -65,15 +78,53 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2020 - Empowerment.Web</p>
+        <!-- Footer  -->
+        <footer id="fh5co-footer" class="fh5co-bg">
+            <div class="container">
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block text-center">Copyright © 2020 Empowerment Set Point For Mind & body, todos los derechos reservados. </small>
+                        </p>
+                        <p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="https://www.facebook.com/empowermentchia/" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/empowermentchia/?hl=es" target="_blank"><i class="icon-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCF8_9OTx1UR39ZKjnu8pzZQ" target="_blank"><i class="icon-youtube"></i></a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+       
+       <script src="~/lib/jquery/dist/jquery.js"></script>
+       <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+       <script src="~/js/site.js" asp-append-version="true"></script>
+    
+        <!-- jQuery -->
+        <script src="~/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="~/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="~/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="~/js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="~/js/jquery.stellar.min.js"></script>
+        <!-- Carousel -->
+        <script src="~/js/owl.carousel.min.js"></script>
+        <!-- countTo -->
+        <script src="~/js/jquery.countTo.js"></script>
+        <!-- Magnific Popup -->
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/js/magnific-popup-options.js"></script>
+        <!-- Main -->
+        <script src="~/js/main.js"></script>
+
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -89,6 +140,12 @@
                 integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <!-- Modernizr JS -->
+        <script src="~/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+    <script src="~/js/respond.min.js"></script>
+    <![endif]-->
     </environment>
 
     @RenderSection("Scripts", required: false)
