@@ -1,6 +1,7 @@
 ﻿using Empowerment.Web.Data;
 using Empowerment.Web.Data.Entities;
 using Empowerment.Web.Helpers;
+using Empowerment.Web.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -55,6 +56,8 @@ namespace Empowerment.Web
 
             services.AddScoped<IUserHelper, UserHelper>();
             services.AddScoped<ICombosHelper, CombosHelper>();
+            services.AddTransient<IEmailSenderHelper, EmailSenderHelper>();
+            services.Configure<EmailSenderOptionsModel>(Configuration.GetSection("EmailSenderOptions"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
